@@ -1,0 +1,169 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color:rgb(222, 230, 237)
+}
+#container-main{
+    margin: 0;
+    padding: 0;
+}
+#container-firt{
+    height: 500px;
+    background-image: url("../img/img-dollar.jpg");
+    background-repeat:round;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 6px 10px 3px #dddddd;
+    cursor:pointer;
+}
+hr{
+    width: 50%;
+    color: #dddddd;
+    background-color: #dddddd;
+}
+#titulo{
+    padding: 0;
+    margin: 0;
+    font-size: 5em;
+    color: rgb(22, 216, 113);
+    font-family: "Bona Nova SC", serif;
+  font-weight: 800;
+
+}
+#header-euro{
+    background-image: url("../img/peso-euro.jpg");
+    background-repeat: round;
+    border-radius: 50px 50px 0px 0px;
+
+}
+#header-mexicano{
+    background-image: url("../img/peso-mexicano.jpg");
+    background-repeat: round;
+    border-radius: 50px 50px 0px 0px;
+ 
+}
+#header-ustraliano{
+    background-image: url("../img/peso-autraliano.jpg");
+    background-repeat: round;
+    border-radius: 50px 50px 0px 0px;
+    
+}
+.headers{
+    cursor: pointer;
+    height: 20em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid rgb(13, 144, 37);
+    box-shadow: -5.5px 3px 10px 3px #dddddd;
+    color: #ffffff;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.1em;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    
+}
+.container-input{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 5px;
+    height: 8em;
+}
+.container-input input{
+    height: 2.5em;
+    font-size: 1em;
+    padding: 0;
+    margin: 2px;
+    width: 40%;
+    border-color: aquamarine;
+    border-radius: 5px;
+    border-style:hidden;
+    border-bottom: 2px solid black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color:azure;
+}
+input:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(181, 19, 19);
+}
+h4{
+    padding: 0;
+    margin: 0;
+}
+#container-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4em;
+}
+.container-item{
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 3px 3px 10px 3px #dddddd;
+}
+.container-item{
+    background-color:azure;
+}
+span{
+    color: chartreuse;
+}
+@media (max-width: 1415px) {
+    #container-section{
+        flex-direction: column;
+        padding: 20%;
+    }
+    .container-item{
+        margin-bottom: 5em;
+    }
+}
+@media (max-width: 1024px) {
+    #container-firt{
+        height: 300px;
+    }
+    #titulo{
+        font-size: 3em;
+    }
+}
+@media (max-width: 770px) {
+    .headers{
+        height: 15em;
+        font-size: 0.8em;
+        font-weight: 500;
+        letter-spacing: 0em;
+    }
+    #container-firt{
+        height: 200px;
+    }
+    #titulo{
+        font-size: 1.5em;
+    }
+    .container-input input{
+        width: 80%;
+    }
+    .container-input{
+        width: 90%;
+        padding: 0;
+        margin: 0;
+        font-size: 1em;
+        flex-direction: column;
+        padding: 5px;
+    }
+    .container-item{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversión de Dólar</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./icon/logo-conversion.png" type="image/x-icon">
+</head>
+<body>
+    <div id="container-main">
+        <div id="container-firt">
+            <img src="./icon/logo-conversion.png" alt="">
+            <h2 id="titulo">Conversión de Dólar</h2>
+            <hr>
+        </div>
+        <div>
+            <div id="container-section">
+                <div class="container-item" id="container-euro">
+                    <div class="headers" id="header-euro">
+                        <h4>Dollar/Eur</h4>
+                    <p>Precio en Euro: <span class="precio">0</span></p>
+                    </div>
+                    <div class="container-input">
+                        <input class="input-calcular" type="number" placeholder="Cantidad dólar">
+                        <input class="input-calcular" type="text" placeholder="Cambio euro" readonly>
+                    </div>
+                </div>
+                <div class="container-item" id="container-mexicano">
+                    <div class="headers" id="header-mexicano">
+                        <h4>Dollar/Mxn</h4>
+                        <p>Precio en Mexicano: <span class="precio">0</span></p>
+                    </div>
+                    <div class="container-input">
+                        <input class="input-calcular" type="number" placeholder="Cantidad dólar">
+                        <input class="input-calcular" type="text" placeholder="Cambio mexicano" readonly>
+                    </div>
+                </div>
+                <div class="container-item" id="container-ustraliano">
+                    <div class="headers" id="header-ustraliano">
+                        <h4>Dollar/Aud</h4>
+                        <p>Precio Australiano: <span class="precio">0</span></p>
+                    </div>
+                    <div class="container-input">
+                        <input class="input-calcular" type="number" placeholder="Cantidad dólar">
+                        <input class="input-calcular" type="text" placeholder="Cambio australiano" readonly>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+    <script src="./js/apidollar.js" onload="apiDollar()"></script>
+</body>
+</html>
