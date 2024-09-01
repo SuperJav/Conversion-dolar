@@ -119,6 +119,24 @@ h4{
 span{
     color: chartreuse;
 }
+footer{
+    background-color: cadetblue;
+    height: 5em;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+footer h6{
+    font-size: 1em;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1em;
+    color: rgb(4, 4, 54);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    cursor: pointer;
+    
+}
 @media (max-width: 1415px) {
     #container-section{
         flex-direction: column;
